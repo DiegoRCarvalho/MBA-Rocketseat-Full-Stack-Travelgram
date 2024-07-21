@@ -2,3 +2,32 @@ header{
   padding-block: 32px;
   font: var(--text-md);
 }
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #profile{
+  display: flex;
+  gap: 32px;
+}
+
+/* Selecionar a primeira div dentro de header, #profile */
+header #profile > div{
+  max-width: 384px;
+}
+
+header #profile img{
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+header #profile h1{
+  font: var(--text-lg);
+  color: var(--text-color-primary);
+  margin-bottom: 8px;
+}
